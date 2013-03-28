@@ -3,24 +3,8 @@
 
 using namespace std;
 
-int main() {
-	//read a file
-	string line;
-	ifstream myfile("sample.txt");
-	while(!myfile.eof()) {
-		getline(myfile, line);
-
-		//string by space using string stream
-		
-	}
-}
-
-/*
-reads the file
-@param void
-@returns void
-*/
-void read_file() {
+void read_file() 
+{
 	string line;
 	ifstream myfile("sample.txt");
 	while(!myfile.eof()) {
@@ -31,16 +15,28 @@ void read_file() {
 	}
 }
 
-/*
-splits the sentence by space
-@param line
-@return void
-*/
-void get_words_from_sentence(string line) {
+void get_words_from_sentence(const string& line)
+{
 	string word;
-	istringstream ss(line);
+	stringstream ss(line);
 	while(!ss.eof()) {
 		ss >> word;
 		cout << word << endl;
 	}
+}
+
+string convert_numbet_to_string(int num)
+{
+	streamstring ss;
+	ss << num;
+	return ss.str();
+}
+
+int convert_string_to_number(const string& str) 
+{
+	int result;
+	streamstring ss(str);
+	if(!(ss >> result))
+		result = 0;
+	return result
 }
