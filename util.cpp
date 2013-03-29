@@ -25,7 +25,7 @@ void get_words_from_sentence(const string& line)
 	}
 }
 
-string convert_numbet_to_string(int num)
+string convert_number_to_string(int num)
 {
 	streamstring ss;
 	ss << num;
