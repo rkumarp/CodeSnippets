@@ -1,3 +1,8 @@
+/*
+Given any integer, efficiently find the next highest integer that uses the same digits. For example, 
+if the number is 15432, you should return 21345.
+*/
+
 #include <iostream>
 using namespace std;
 
