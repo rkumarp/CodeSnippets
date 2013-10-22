@@ -1,8 +1,9 @@
 #include <fstream>
 #include <sstream>
+#include <iostream>
 
 using namespace std;
-
+void get_words_from_sentence(const string& line);
 void read_file() 
 {
 	string line;
