@@ -1,6 +1,5 @@
-
-
 public class HashTable<K, V> {
+     
      private static final int CAPACITY = 100;
 
      private int size;
