@@ -12,8 +12,6 @@ public void mergeSort(int[] ar)
 public void merge(int[] ar, int[] left, int[] right)
 {
     int i = 0, j = 0;
-    
-    //iterate through the arrays
     while(i < left.length || j < right.length)
     {
         if(i == left.length)
