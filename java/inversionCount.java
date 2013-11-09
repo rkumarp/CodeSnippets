@@ -1,6 +1,6 @@
 public int invertionCount(int[] ar)
 {
-	if(ar.length < 2) return 0;
+    if(ar.length < 2) return 0;
     int mid = (ar.length + 1) / 2;
     int[] left = Arrays.copyOfRange(ar, 0, mid);
     int[] right = Arrays.copyOfRange(ar, mid, ar.length);
@@ -34,7 +34,6 @@ public int merge(int[] ar, int[] left, int[] right)
              j++;
              count++;
          }
-    
     }
     return count;
 }
