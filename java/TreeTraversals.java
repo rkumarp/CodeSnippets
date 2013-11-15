@@ -17,10 +17,10 @@ public void postOrder(Node root)
              break
          }
          //push
+         if(current.right != null)
+             s.push(current.right);
          if(current.left != null)
              s.push(current.left);
-         if(current.rigth != null)
-             s.push(current.right);
     }
 }
 
