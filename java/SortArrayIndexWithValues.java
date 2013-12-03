@@ -24,3 +24,9 @@ public class ArrayIndexComparator implements Comparator<Integer>
         return array[index1].compareTo(array[index2]);
     }
 }
+
+String[] countries = { "France", "Spain", ... };
+ArrayIndexComparator comparator = new ArrayIndexComparator(countries);
+Integer[] indexes = comparator.createIndexArray();
+Arrays.sort(indexes, comparator);
+// Now the indexes are in appropriate order
