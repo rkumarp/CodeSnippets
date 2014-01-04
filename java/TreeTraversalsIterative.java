@@ -14,7 +14,6 @@ public void postOrder(Node root)
              s.pop();
              System.out.println(current.data);
              previous = current;
-             break
          }
          //push
          if(current.right != null)
